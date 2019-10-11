@@ -7,27 +7,7 @@ def highest_affinity(site_list, user_list, time_list):
     # Returned string pair should be ordered by dictionary order
     # I.e., if the highest affinity pair is "foo" and "bar"
     # return ("bar", "foo"). 
-    if (len(site_list) != len(user_list)):
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No")  
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        print("No") 
-        return ""
+
     user_history = {}
     for site, user in zip(site_list, user_list):
         if user not in user_history:
