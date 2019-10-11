@@ -1,6 +1,5 @@
 import unittest
 import affinityJenkins.compute_highest_affinity as compute_highest_affinity
-
 class ControlledTests(unittest.TestCase):
     def test1(self):
         site_list = ["a.com", "b.com", "a.com", "b.com", "a.com", "c.com"]
@@ -9,3 +8,11 @@ class ControlledTests(unittest.TestCase):
         computed_result = compute_highest_affinity.highest_affinity(site_list, user_list, time_list)
         expected_result = ("a.com", "b.com")
         self.assertEqual(computed_result, expected_result)
+    # def test2(self):
+    #     site_list = ["a.com", "b.com"]
+    #     user_list = ["andy"]
+    #     time_list = []
+    #     # computed_result = compute_highest_affinity.highest_affinity(site_list, user_list, time_list)
+    #     expected_result = (3)
+    #     computed_result = compute_highest_affinity.add(1,2)
+    #     self.assertEqual(computed_result, expected_result)
